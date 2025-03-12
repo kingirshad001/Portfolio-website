@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <!------------------------------------------------ header and navbar---------------------------------------->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.jpeg" alt="" srcset="" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>Developer | Engineer | Creator</p>
+        <h2>
+            Hey, I'm <span>Irshad Alam</span><br />
+           <i> Bringing Ideas to Life with Code</i>
+        </h2>
+        <p>Building intuitive, scalable, and high-performance applications.</p>
+        <a href="#portfolio" class="btn">See My Work</a>
+    </div>
+    
+
+
+    </div>
+  </div>
+  <!------------------------------------------------about---------------------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/irshad_phtot.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            As a driven and versatile software engineer, I am passionate about exploring emerging technologies and
+            delivering innovative solutions. With a strong foundation in full-stack development, problem-solving, and
+            software design, I am eager to contribute to cutting-edge projects and make a meaningful impact within
+            dynamic, collaborative environments.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Front-End</span><br />HTML, CSS, JavaScript, Bootstrap,
+                React.js
+              </li>
+              <li>
+                <span>Back-End</span><br />Java, Java EE, Spring Boot, Spring
+                MVC, JPA
+              </li>
+              <li>
+                <span>Database</span><br />SQL, PLSL, MySQL, Oracle DB, JDBC,
+                JPA
+              </li>
+              <li>
+                <span>Development Tools & IDEs</span><br />VS Code, IntelliJ,
+                Maven, Git/GitHub, Eclipse IDE
+              </li>
+              <li>
+                <span>Additional Skills</span><br />Python, WordPress, Core Java & Object-Oriented
+                Programming, Data Structures & Collection framework,
+                Hibernate, Problem Solving, Logic Building and Communication
+            </ul>
+            </ul>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Sep 2023 – Dec 2023</span><br />
+                <i>The Website Makers, Online</i>
+                <br /><b>Web Development Intern</b>
+                <br>
+                Developed and deployed a responsive and visually appealing webpage for a gaming website using HTML, CSS,
+                JavaScript, and Bootstrap.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2025 - 2026</span><br />
+                <i>University Of Alabama at Birmingham, AL, USA</i>
+                <br>
+                <b>Masters in Computer Science</b>
+                <br>
+                CGPA: 4/4
+              </li>
+              <li>
+                <span>2020 - 2024</span><br />
+                <i>Bharath Institute Of Higher Education and Research, Chennai</i>
+                <br>
+                <b>BTech, CSE</b>
+                <br>
+                CGPA: 8.88/10
+              </li>
+              <li>
+                <span>2017 - 2019</span><br />
+                <i>Narayana Junior College, Hyderabad</i>
+                <br>
+                <b>Intermediate</b>
+                <br>
+                Percentage: 94.4/100
+              </li>
+              <li>
+                <span>2016 - 2017</span><br />
+                <i>Gowtham Model School, Hyderabad</i>
+                <br>
+                <b>10th/High School</b>
+                <br>
+                CGPA: 8.8/10
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------------------services----------------------------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title sub-title2">My Services</h1>
+      <div class="services-list">
+        <!-- Web Application Development -->
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Application Development</h2>
+          <p>
+            I specialize in creating dynamic, interactive web applications using Java frameworks like Spring Boot and
+            front-end technologies such as React.js. With a focus on performance, security, and user experience, I help
+            businesses build scalable applications that meet their unique requirements.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+        <!-- API Development & Integration -->
+        <div>
+          <i class="fas fa-cogs"></i>
+          <h2>API Development & Integration</h2>
+          <p>
+            I develop secure, scalable RESTful APIs using Java and ensure seamless integration with third-party
+            services. Whether it's data sharing or system synchronization, I make it easy for your software to
+            communicate with other platforms.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+        <!-- Database Design & Management -->
+        <div>
+          <i class="fas fa-database"></i>
+          <h2>Database Design & Management</h2>
+          <p>
+            With expertise in MySQL, Oracle DB, and JPA, I design and manage databases that are optimized for
+            performance, scalability, and security. Whether you're looking for database migration, schema design, or
+            optimization, I provide solutions that ensure your data is always accessible and secure.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+        <!-- UI/UX Design -->
+        <div>
+          <i class="fas fa-paint-brush"></i>
+          <h2>UI/UX Designing & Development </h2>
+          <p>
+            I design aesthetically pleasing, user-centric interfaces that enhance the user experience. From wireframes
+            to prototypes, I focus on creating intuitive, accessible designs that align with your brand’s vision.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+        <!-- WordPress Development -->
+        <div>
+          <i class="fab fa-wordpress"></i>
+          <h2>WordPress Development</h2>
+          <p>
+            I offer WordPress website development services, including theme customization, plugin development, and
+            full-stack solutions for blogs, e-commerce, and corporate websites. Let me help you build a responsive and
+            feature-rich WordPress site.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+        <!-- Java-based Application Development -->
+        <div>
+          <i class="fas fa-laptop-code"></i>
+          <h2>Java-based Application Development</h2>
+          <p>
+            I develop robust Java-based applications using frameworks like Spring, Hibernate, and Java EE. Whether it's
+            an enterprise system, desktop application, or server-side software, I ensure scalability, reliability, and
+            high performance.
+          </p>
+          <!-- <a href="#contact" class="contact-btn">Inquire</a> -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------- Portfolio Section ------------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title sub-title2">My Work</h1>
+  
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+  
+      <!-- Work List -->
+      <div class="work-list">
+        <!-- Virtual Assistant -->
+        <div class="work" data-category="ai">
+          <img src="images/ai-generator.avif" alt="Virtual Assistant" />
+          <div class="layer">
+            <h3>Virtual Assistant</h3>
+            <p>A Python-based assistant capable of web scraping, information retrieval, and automation tasks.</p>
+            <a href="https://github.com/kingirshad001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Online Auction System -->
+        <div class="work" data-category="database">
+          <img src="images/auction.jpg" alt="Online Auction System" />
+          <div class="layer">
+            <h3>Online Auction System</h3>
+            <p>A real-time bidding platform using React.js, MongoDB, and WebSockets.</p>
+            <a href="https://github.com/kingirshad001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- E-Commerce Website -->
+        <div class="work" data-category="web">
+          <img src="images/ecommerce.avif" alt="E-Commerce Website" />
+          <div class="layer">
+            <h3>E-Commerce Website</h3>
+            <p>A responsive website for browsing products, shopping cart functionality, and checkout.</p>
+            <a href="https://github.com/kingirshad001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- AI Image Generator -->
+        <div class="work" data-category="ai">
+          <img src="images/virtual-assistant.jpg" alt="AI Image Generator" />
+          <div class="layer">
+            <h3>Web-based Custom AI Image Generator</h3>
+            <p>Generates AI-powered images using OpenAI API based on user input.</p>
+            <a href="https://github.com/kingirshad001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Theatre Management System -->
+        <div class="work" data-category="database">
+          <img src="images/theatre.avif" alt="Theatre Management System" />
+          <div class="layer">
+            <h3>Theatre Management System</h3>
+            <p>Manages theatre operations with Spring Boot, Hibernate, and REST APIs.</p>
+            <a href="https://github.com/kingirshad001" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- See More Button -->
+      <button id="see-more-btn">See More</button>
+    </div>
+  </div>
+
+  <!--------------------------------contact---------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> Personal-EMAIL: irshadalam7779@gmail.com</p>
+          <p><i class="fas fa-at"></i> University-EMAIL: ialam@uab.edu</p>
+          <div class="social-icon">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/IRSHAD_RESUME_UPDATED.pdf" target="_blank" class="btn btn2">View CV</a>
+        </div>
+        <div class="contact-right">       
+          <form action="https://formspree.io/f/moveqkkg" method="POST">
+            <input type="text" name="Name" id="" placeholder="Your Name" required />
+            <input type="email" name="email" id="" placeholder="Your Email" required />
+            <textarea name="Message " rows="6" placeholder="Your Message" id=""></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright <i class="fas fa-copyright"></i> Irshad.Made with
+        <i class="fas fa-heart"></i> by Irshad Alam
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
